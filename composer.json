@@ -1,13 +1,27 @@
 {
     "name": "rapani/blade",
-    "description": "blade engine",
-    "type": "library",
-    "license": "MIT",
+    "description": "Blade template engine for MVC - laravel 8",
+    "keywords": ["blade"],
+    "license" : "MIT",
     "authors": [
         {
-            "name": "Ahmad Rapani",
-            "email": "rapani.lbs@gmail.com"
+            "name": "Rapani Loebis",
+            "homepage": "https://rapani-id.com"
         }
     ],
-    "require": {}
+    "require": {
+        "php": ">=7.3",
+        "illuminate/view": "^7.3|^8.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.3|^8.0",
+        "satooshi/php-coveralls": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "rapani\\Blade\\": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }
